@@ -3,7 +3,6 @@ import { MicroCMSImage, MicroCMSContentId, MicroCMSDate } from 'microcms-js-sdk'
 export type Base = {
   fv: MicroCMSImage
   about_detail: string
-  about_title: string
   about_image: MicroCMSImage
   skills: Skill[]
   services: Service[]

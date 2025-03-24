@@ -13,7 +13,7 @@ export const ServiceList = ({ services }: Props) => (
         <li key={name} className="md:w-1/3">
           <Image src={image.url} width={image.width} height={image.height} alt={name} />
           <p className="mb-2 text-center text-xl font-bold">{name}</p>
-          <p className="text-sm">{detail}</p>
+          <p className="text-justify text-sm md:text-base">{detail}</p>
         </li>
       )
     })}

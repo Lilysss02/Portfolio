@@ -1,0 +1,5 @@
+.work-pagination {
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-color: #95e9f3;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+}

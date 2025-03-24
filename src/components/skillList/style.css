@@ -24,17 +24,8 @@
     inset: calc(50% - 4px);
     background: var(--color-blue);
     -webkit-transform: rotate(calc(var(--percent) * 3.6deg))
-      translateY(calc(50% - 2.8125rem));
+      translateY(calc(50% - 3.125rem));
     transform: rotate(calc(var(--percent) * 3.6deg))
-      translateY(calc(50% - 2.8125rem));
-  }
-
-  @media (min-width: 768px) {
-    &:after {
-      -webkit-transform: rotate(calc(var(--percent) * 3.6deg))
-        translateY(calc(50% - 3.125rem));
-      transform: rotate(calc(var(--percent) * 3.6deg))
-        translateY(calc(50% - 3.125rem));
-    }
+      translateY(calc(50% - 3.125rem));
   }
 }

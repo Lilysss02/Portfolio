@@ -16,10 +16,10 @@ export default async function Home() {
         <Image src={fv.url} alt="ファーストビュー" width={fv.width} height={fv.height} />
       </div>
       <section id="about">
-        <div className="w-inner mx-auto max-w-3xl">
+        <div className="w-inner mx-auto max-w-xl md:max-w-3xl">
           <Title title="about" subtitle="私について" />
-          <div className="flex items-center justify-center gap-10">
-            <div className="w-1/4">
+          <div className="flex flex-col items-center justify-center gap-x-10 gap-y-4 md:flex-row">
+            <div className="w-1/3 md:w-1/4">
               <Image
                 src={about_image.url}
                 alt="プロフィール画像"
@@ -28,14 +28,14 @@ export default async function Home() {
               />
             </div>
             <div className="flex-1">
-              <p>{about_detail}</p>
+              <p className="text-justify text-sm md:text-base">{about_detail}</p>
             </div>
           </div>
         </div>
       </section>
       {skills && (
         <section id="skills">
-          <div className="mx-auto max-w-3xl">
+          <div className="md:w-inner mx-auto max-w-3xl">
             <Title title="skills" subtitle="スキル" />
             <SkillList skills={skills} />
           </div>
@@ -43,7 +43,7 @@ export default async function Home() {
       )}
       {services && (
         <section id="services">
-          <div className="w-inner mx-auto max-w-6xl">
+          <div className="w-inner mx-auto max-w-xl md:max-w-6xl">
             <Title title="services" subtitle="サービス" />
             <ServiceList services={services} />
           </div>
@@ -51,7 +51,7 @@ export default async function Home() {
       )}
       {works && (
         <section id="works">
-          <div className="w-inner mx-auto max-w-6xl">
+          <div className="mx-auto max-w-6xl">
             <Title title="works" subtitle="制作実績" />
             <WorkList works={works} />
           </div>

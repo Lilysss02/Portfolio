@@ -78,7 +78,7 @@ export const Form = () => {
         </FormLabel>
         <button
           type="submit"
-          className={`text-foreground relative mx-auto w-full max-w-80 overflow-hidden rounded-full text-center leading-10 font-bold before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-80 ${isFormValid ? 'from-pink to-blue cursor-pointer bg-linear-to-r' : 'pointer-events-none bg-gray-400 text-white'}`}
+          className={`text-foreground relative mx-auto w-full max-w-80 overflow-hidden rounded-full text-center leading-10 font-bold before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-80 ${isFormValid ? 'from-pink to-blue cursor-pointer bg-linear-to-r' : 'pointer-events-none bg-gray-300 text-white'}`}
           disabled={!isFormValid}
         >
           {isSending ? '送信中' : '送信する'}
