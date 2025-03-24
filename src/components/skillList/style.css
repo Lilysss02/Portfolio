@@ -1,0 +1,40 @@
+.graph {
+  &:before {
+    background: radial-gradient(farthest-side, var(--color-pink) 98%, rgba(0, 0, 0, 0))
+        top/8px 8px no-repeat,
+        conic-gradient(
+          from 0deg,
+          var(--color-pink),
+          var(--color-blue) calc(var(--percent) * 1%),
+          rgba(0, 0, 0, 0) 0
+        );
+    mask: radial-gradient(
+      farthest-side,
+      rgba(0, 0, 0, 0) calc(99% - 8px),
+      #000 calc(100% - 8px)
+    );
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      rgba(0, 0, 0, 0) calc(99% - 8px),
+      #000 calc(100% - 8px)
+    );
+  }
+
+  &:after {
+    inset: calc(50% - 4px);
+    background: var(--color-blue);
+    -webkit-transform: rotate(calc(var(--percent) * 3.6deg))
+      translateY(calc(50% - 2.8125rem));
+    transform: rotate(calc(var(--percent) * 3.6deg))
+      translateY(calc(50% - 2.8125rem));
+  }
+
+  @media (min-width: 768px) {
+    &:after {
+      -webkit-transform: rotate(calc(var(--percent) * 3.6deg))
+        translateY(calc(50% - 3.125rem));
+      transform: rotate(calc(var(--percent) * 3.6deg))
+        translateY(calc(50% - 3.125rem));
+    }
+  }
+}

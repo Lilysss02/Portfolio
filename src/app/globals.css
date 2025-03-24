@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0d3b66;
+  --color-pink: #fbd5fb;
+  --color-blue: #95e9f3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-caveat: var(--font-caveat);
+  --font-zenkaku: var(--font-zenkaku);
+  --width-inner: calc(100% - 2rem);
+  --color-pink: var(--color-pink);
+  --color-blue: var(--color-blue);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    /* --foreground: #ededed; */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-zenkaku);
+}
+
+.clip-text {
+  @apply bg-clip-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

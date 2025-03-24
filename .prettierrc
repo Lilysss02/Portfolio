@@ -1,0 +1,19 @@
+{
+  "semi": false,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "printWidth": 120,
+  "tabWidth": 2,
+  "parser": "typescript",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "parser": "json",
+        "singleQuote": false
+      }
+    }
+  ]
+}
